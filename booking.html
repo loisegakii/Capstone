@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Service Booking</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<style>
+body {
+	font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #2C3E50, #4C669F, #6A85B6, #B0BEC5);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+</style>
+<div class="booking-container">
+        <h2>Book a Cleaning Service</h2>
+        
+        <label for="service">Select a Service:</label>
+        <select id="service" onchange="updatePrice()">
+            <option value="50">Standard Cleaning - $50</option>
+            <option value="80">Deep Cleaning - $80</option>
+            <option value="100">Move-out Cleaning - $100</option>
+        </select>
+        
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" required>
+        
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" required>
+        
+        <h3>Estimated Price: <span id="price">$50</span></h3>
+        
+        <button onclick="bookService()">Confirm Booking</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,696 @@
+/* General Styles */
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+    text-align: center;
+    color: #333;
+        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding: 15px 5px;
+    background: #F7DO4F;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 900;
+        }
+.navbar .btn {
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+        }
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+        }
+.btn-primary:hover {
+    background: #0056b3;
+        }
+/*Styling the hero section*/
+.hero-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('Images/cleaning.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+    padding: 80px;
+    margin: 95px;
+    width: auto;
+        }
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+.hero-section p {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0 30px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+        }
+.hero-section .cta-btn {
+    background: #ffc107;
+    color: #333;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+        }
+.cta-btn:hover {
+    background: #e0a800;
+        }
+
+
+/*Styling the about section*/
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: #333;
+        }
+.about-content {
+    flex: 1;
+    padding: 20px;
+        }
+.about-content h2 {
+    font-size: 3rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+        }
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+        }
+.about-content a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+        }
+.about-content a:hover {
+    background-color: #0056b3;
+        }
+.about-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    }
+.about-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+@media (max-width: 768px) {
+    .about {
+    flex-direction: column;
+        }
+        }
+/* Services Section */
+.services {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px 5px;
+    text-align: center;
+}
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.services p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+        }
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    }
+.service-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*Hovering over the service*/
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+/*Maximum width of the image*/
+.service-item img {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+        }
+.service-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    }
+.service-item p {
+    font-size: 1rem;
+    }
+
+/* Footer */
+
+footer {
+    background-color: #2C3E50;  /* Dark professional blue */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #1ABC9C; /* Accent color for hover effect */
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #1ABC9C;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Styles for the User Registration */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    max-width: 400px;
+    width: 80%;
+    height: ;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Form Fields */
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* More rounded */
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.container form input:focus {
+    outline: none;
+    background-color: #e8f0fe; /* Subtle blue highlight */
+    border-color: #3B82F6;
+}
+
+/* Button Styling */
+.container form button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #1E3A8A; /* Deep blue */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded button */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.container form button:hover {
+    background-color: #2563EB; /* Lighter blue */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Links (Login/Sign Up) */
+.container a {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #1E3A8A; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #2563EB; 
+}
+
+/* Sign-up container */
+#sign-up-container {
+    display: none;
+}
+/*Styling th Mini Nav bar on login*/
+.login-nav {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Corrected */
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+.login-nav .logo {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-nav nav a {
+    margin: 0 24px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.login-nav nav a:hover {
+    color: #6A11CB; /* Purple on hover */
+}
+/*Styling the get a quote page*/
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 90px;
+    color: #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a11cb;
+        }
+
+form label {
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+        }
+
+form input, form textarea, form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+        }
+
+form input:focus, form textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+        }
+
+form button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+        }
+
+form button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+        }
+/* Animated Bubbles */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: floatBubbles 8s infinite ease-in-out;
+}
+
+/* Bubble movement */
+@keyframes floatBubbles {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { transform: translateY(-100vh) scale(1.3); opacity: 0; }
+}
+
+/* Randomizing bubbles */
+.bubble:nth-child(1) { left: 10%; animation-duration: 7s; }
+.bubble:nth-child(2) { left: 30%; animation-duration: 9s; width: 40px; height: 40px; }
+.bubble:nth-child(3) { left: 50%; animation-duration: 6s; }
+.bubble:nth-child(4) { left: 70%; animation-duration: 8s; width: 25px; height: 25px; }
+.bubble:nth-child(5) { left: 90%; animation-duration: 10s; width: 35px; height: 35px; }
+
+/*Styling the service booking page*/
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #007bff;
+    color: #fff;
+}
+.booking-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.booking-header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: #444;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-summary {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.booking-btn {
+    display: block;
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-btn:hover {
+    background: #218838;
+}
+
+/*Confirmation page styling*/
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #007bff;
+    color: #fff;
+}
+
+.confirmation-details, .payment-section {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary p, .payment-section p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.actions {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/*Styling the booking confirmation page*/
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Card Styling */
+.confirmation-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Headings */
+h1 {
+    color: #28a745;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Information Sections */
+.booking-info, .payment-info {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.booking-info p, .payment-info p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Styling the Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Modify Button */
+.modify-btn {
+    background: #007bff;
+    color: #fff;
+}
+
+.modify-btn:hover {
+    background: #0056b3;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background: #dc3545;
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background: #b22a36;
+}
+
+/* Back to Home */
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    color: #000;
+}
+
+/*Contact Us Page*/
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #007bff;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.contact-info, .contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    color: #007bff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.map {
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}

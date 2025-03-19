@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Get a Quote</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<style>
+ body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #2C3E50, #4C669F, #6A85B6, #B0BEC5);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+        
+</style>
+ <div class="container">
+        <img src="Images/quote.jpg" alt="Quote" height="120" width="300">
+        <form action="submit-quote.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="details">Service Details:</label>
+            <textarea id="details" name="details" rows="5" placeholder="Describe your cleaning needs" required></textarea>
+
+            <button type="submit">Request a Quote</button>
+        </form>
+    </div>
+   <div class="animated-bg">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</div>
+</body>
+</html>
