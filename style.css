@@ -14,7 +14,7 @@
     padding: 15px 5px;
     background: #F7DO4F;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -41,15 +41,15 @@
         }
 /*Styling the hero section*/
 .hero-section {
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url('Images/cleaning.jpg') no-repeat center center/cover;
     opacity: 0.9;
-    padding: 80px;
-    margin: 95px;
+    padding: 90px;
+    margin: 20px;
     width: auto;
         }
 
@@ -311,6 +311,7 @@ footer {
 #sign-up-container {
     display: none;
 }
+
 /*Styling th Mini Nav bar on login*/
 .login-nav {
     display: flex;
@@ -321,7 +322,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Corrected */
+    width: 100%;
     background-color: #f4f4f4;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Ensures navbar stays on top */
@@ -646,6 +647,32 @@ header {
     flex-wrap: wrap;
     gap: 30px;
     padding: 40px 20px;
+}
+.contact-nav{
+    justify-content: space-between; /* Pushes logo left, menu right */
+    align-items: center;
+    padding: 15px 50px;
+    background: #007bff;
+    color: white;
+}
+.logo img {
+    height: 50px; /* Adjust size */
+    width: auto;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 .contact-info, .contact-form {
